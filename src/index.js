@@ -2,6 +2,9 @@ module.exports = function towelSort (matrix) {
 let sortedArray = [];
 let k = 0;
 
+if (!matrix || matrix.length == 0)    
+return sortedArray;
+else {    
 for (let i = 0; i < matrix.length; i++) 
     {    
     if (i % 2 == 0){
@@ -22,4 +25,5 @@ for (let i = 0; i < matrix.length; i++)
 }
 
 return sortedArray;
+}
 }
